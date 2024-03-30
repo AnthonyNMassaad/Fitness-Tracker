@@ -23,3 +23,29 @@ The Fitness Tracker is a simple yet powerful application designed to help users 
    - **Custom Workouts:** Create workout plans from predefined options.
    - **Calorie Burning:** Updates daily calorie intake based on activity distance and intensity for cardio exercises (walking, running, swimming) and post-workout execution for planned workouts.
    - **Display:** Shows the workout plan. Indicates if the plan is empty.
+
+## Time Complexity
+
+### a) Algorithm for Calculating BMI: 
+   - **Time Complexity:** O(1)
+
+### b) Algorithm for keeping track of daily calorie and protein intake: 
+   - **Time Complexity:** O(n) where n is the size of the map.
+   
+**Description of the algorithm:**
+1. Let the User input what he ate:
+   - From the system meals (map), the only thing he needs to input is the name of the meal. (O(1))
+   - From the Meal Plan (queue), the first element of the queue is searched in the map, (O(n) since in the worst case we search the map till the last element)
+2. The daily Calorie and Protein intake attributes are then updated using the calorie and protein of the corresponding food from the vector inside the map. (O(1))
+
+### c) Algorithm for Suggesting a Workout Plan: 
+   - **Time Complexity:** O(n) where n is the size of the workout routine.
+
+**Description of the algorithm:**
+1. Input the user's strength level and fitness goal. (O(1))
+2. Based on the user's input, select an appropriate predefined workout routine from the map of workout routines. (O(1))
+3. For each exercise in the selected workout routine:
+   - Retrieve the targeted muscle group and estimate calorie burn for the exercise. (O(1))
+   - Add the exercise to the workout plan queue. (O(1)) (But since this is done for every element in the workout routine then the time complexity is O(N))
+4. Display the workout plan with exercises, muscle groups, and estimated calorie burns. (O(1))
+
