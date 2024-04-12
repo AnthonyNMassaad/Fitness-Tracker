@@ -1,7 +1,7 @@
 # Fitness Tracker 💪📊
 
 ## Overview
-The Fitness Tracker is a simple yet powerful application designed to help users track their fitness activities, monitor their progress, and maintain a balanced lifestyle. With features to track water intake, calories, protein intake, and sleep.
+The Fitness Tracker is a simple yet powerful application designed to help users track their fitness activities, monitor their progress, and maintain a balanced lifestyle. With features to track water intake, calories, protein intake, and sleep. A colleague and I collaborated together on this project for our Data Structures final year project, utilizing a variety of data structures including maps, queues, and stacks.
 
 ## How It Works
 1. **User Profile Setup:**
